@@ -11,6 +11,7 @@
   "author": "Ciara Sullivan",
   "license": "ISC",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "lite-server": "^2.5.4"
   }
 }
