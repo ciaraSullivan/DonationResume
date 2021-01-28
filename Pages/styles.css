@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: small;
+}
+
+li {
+    font-size: medium;
+}
+
+footer {
+    padding: 20px 0;
+    border-top: rgb(49, 49, 49) solid 2px;
+    text-align: center;
+
+}
+
+img {
+    margin: auto;
+    max-width: 30%;
+    max-height: 240px;
+}
+
+.text-white {
+    text-align: center;
+}
+
+.containerBackground {
+    background-color: rgb(59, 59, 59);
+
+}
