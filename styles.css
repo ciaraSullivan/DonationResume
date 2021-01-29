@@ -55,3 +55,17 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.nav-pills {
+    width: 100%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #1d1c1c;
+}
+
+.nav-pills .nav-link:hover:not(.nav-link.active) {
+    color: #fff;
+    background-color: #2b2a2a;
+}
