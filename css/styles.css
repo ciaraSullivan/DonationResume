@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Lato&display=swap");
+body {
+  background-color: black;
+  color: white;
+  font-size: small;
+  font-family: "Lato", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: .25rem; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: black; }
+
+li {
+  font-size: medium; }
+
+.nav-tabs {
+  padding: 0 15px; }
+
+.tabSections {
+  margin: 0 0 50px 0; }
+
+footer {
+  padding: 20px 0;
+  border-top: #3b3b3b solid 2px;
+  text-align: center; }
+
+.text-white {
+  text-align: center; }
+
+.containerBackground {
+  background-color: #3b3b3b;
+  padding-top: 5px;
+  border: solid white 2px; }
+
+.tabSections a {
+  color: white; }
+
+#v-pills-tabContent .tab-pane {
+  padding: 15px;
+  background-color: #3b3b3b; }
+
+.welcomePagePic {
+  max-width: 600px; }
+
+.containerBackground button {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.nav-pills .nav-link {
+  width: 100%;
+  color: white; }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: white;
+  background-color: #1d1c1c; }
+
+.nav-pills .nav-link:hover:not(.nav-link.active) {
+  color: white;
+  background-color: #2b2a2a; }
+
+.nav-pills div {
+  font-weight: bold;
+  letter-spacing: 2px; }

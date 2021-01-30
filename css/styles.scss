@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Lato&display=swap');
+$heading-font: 'Bodoni Moda', serif;
+$text-font: 'Lato', sans-serif;
+
+$background-color: black;
+$container-color:  rgb(59, 59, 59);
+$text-color: white;
+$captions: rgb(253, 227, 231);
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-size: small;
+    font-family: $text-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+    letter-spacing: .25rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+li {
+    font-size: medium;
+}
+
+.nav-tabs {
+    padding: 0 15px;
+}
+
+.tabSections {
+    margin: 0 0 50px 0;
+}
+
+footer {
+    padding: 20px 0;
+    border-top: $container-color solid 2px;
+    text-align: center;
+}
+
+.text-white {
+    text-align: center;
+}
+
+.containerBackground {
+    background-color: $container-color;
+    padding-top: 5px;
+    border: solid $text-color 2px;
+}
+
+.tabSections a {
+    color: $text-color;
+}
+
+#v-pills-tabContent .tab-pane {
+    padding: 15px;
+    background-color: $container-color;
+}
+
+.welcomePagePic {
+    max-width: 600px;
+}
+
+.containerBackground button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-pills .nav-link {
+    width: 100%;
+    color: $text-color;
+}
+
+.nav-pills {
+    .nav-link.active, .show>.nav-link{
+        color: $text-color;
+        background-color: #1d1c1c;
+    }
+    .nav-link:hover:not(.nav-link.active) {
+        color: $text-color;
+        background-color: #2b2a2a;
+    }
+    div {
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}
