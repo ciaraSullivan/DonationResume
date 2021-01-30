@@ -9,6 +9,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bodoni Moda', serif;
+    letter-spacing: .25rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
 }
 
 li {
@@ -36,6 +41,7 @@ footer {
 .containerBackground {
     background-color: rgb(59, 59, 59);
     padding-top: 5px;
+    border: solid white 2px;
 }
 
 .tabSections a {
@@ -56,8 +62,9 @@ footer {
     margin-bottom: 10px;
 }
 
-.nav-pills {
+.nav-pills .nav-link {
     width: 100%;
+    color: white;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -68,4 +75,9 @@ footer {
 .nav-pills .nav-link:hover:not(.nav-link.active) {
     color: #fff;
     background-color: #2b2a2a;
+}
+
+.nav-pills div {
+    font-weight: bold;
+    letter-spacing: 2px;
 }
