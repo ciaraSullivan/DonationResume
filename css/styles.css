@@ -52,6 +52,9 @@ footer {
   width: 100%;
   color: white; }
 
+.nav-pills .nav-link {
+  padding: 2px 100% 2px 0; }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: white;
   background-color: #1d1c1c; }

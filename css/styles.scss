@@ -75,6 +75,10 @@ footer {
 }
 
 .nav-pills {
+    .nav-link {
+        padding: 2px 100% 2px 0;
+    }
+
     .nav-link.active, .show>.nav-link{
         color: $text-color;
         background-color: #1d1c1c;
