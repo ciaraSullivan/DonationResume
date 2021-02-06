@@ -69,24 +69,21 @@ footer {
     margin-bottom: 10px;
 }
 
-.nav-pills .nav-link {
-    width: 100%;
-    color: $text-color;
-}
 
 .nav-pills {
     .nav-link {
         padding: 2px 100% 2px 0;
+        color: $text-color;
     }
 
-    .nav-link.active, .show>.nav-link{
-        color: $text-color;
-        background-color: #1d1c1c;
-    }
-    .nav-link:hover:not(.nav-link.active) {
-        color: $text-color;
+    .nav-link:hover {
         background-color: #2b2a2a;
     }
+
+    .nav-link.active {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
     div {
         font-weight: bold;
         letter-spacing: 2px;

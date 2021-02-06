@@ -4,10 +4,17 @@
   "description": "Nucamp Portfolio Project Full-Stack",
   "main": "index.html",
   "scripts": {
+    "lite": "lite-server",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
     "scss": "node-sass -o css/ css/",
-    "lite": "lite-server"
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin builder.html -d dist --htmlmin -o dist/builder.html && usemin resources.html -d dist --htmlmin -o dist/resources.html && usemin index.html -d dist --htmlmin -o dist/index.html"
   },
   "author": "Ciara Sullivan",
   "license": "ISC",
@@ -20,7 +27,13 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
     "lite-server": "^2.5.4",
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   }
 }
