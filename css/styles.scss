@@ -3,7 +3,7 @@ $heading-font: 'Bodoni Moda', serif;
 $text-font: 'Lato', sans-serif;
 
 $background-color: black;
-$container-color:  rgb(59, 59, 59);
+$container-color:  rgb(68, 68, 68);
 $text-color: white;
 $captions: rgb(253, 227, 231);
 
@@ -14,9 +14,28 @@ body {
     font-family: $text-font;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.nav-tabs .nav-link.active {
+    color: #000000;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.heading {
+    font-weight: bolder;
+    line-height: 0;
+    padding-top: 10px;
+}
+
+span[class=font-italic] {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:rgb(59, 59, 59);
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-toggler span {
     font-family: $heading-font;
     letter-spacing: .25rem;
+    margin-bottom: 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -27,8 +46,8 @@ li {
     font-size: medium;
 }
 
-.nav-tabs {
-    padding: 0 15px;
+.nav {
+    flex-wrap: nowrap;
 }
 
 .tabSections {
@@ -48,6 +67,7 @@ footer {
 .containerBackground {
     background-color: $container-color;
     padding-top: 5px;
+    padding-bottom: 5px;
     border: solid $text-color 2px;
 }
 
@@ -64,15 +84,9 @@ footer {
     max-width: 600px;
 }
 
-.containerBackground button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-
 .nav-pills {
     .nav-link {
-        padding: 2px 100% 2px 0;
+        padding: 5px 100% 5px 0;
         color: $text-color;
     }
 
@@ -81,7 +95,7 @@ footer {
     }
 
     .nav-link.active {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.979);
     }
 
     div {

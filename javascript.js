@@ -1,4 +1,8 @@
-$('#donation101Tab a').on('click', function (e) {
-    e.preventDefault()
-    $(this).tab('show')
+$(function(){
+  $('.builderTab').click(function(){
+    if ($('.builderTab').siblings('a').hasClass("active")) {
+      $(".builderTab").siblings('a').removeClass("active");
+    }
   })
+
+});

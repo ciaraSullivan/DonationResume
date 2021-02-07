@@ -5,9 +5,25 @@ body {
   font-size: small;
   font-family: "Lato", sans-serif; }
 
-h1, h2, h3, h4, h5, h6 {
+.nav-tabs .nav-link.active {
+  color: #000000;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff; }
+
+.heading {
+  font-weight: bolder;
+  line-height: 0;
+  padding-top: 10px; }
+
+span[class=font-italic] {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #3b3b3b; }
+
+h1, h2, h3, h4, h5, h6, .navbar-toggler span {
   font-family: "Bodoni Moda", serif;
-  letter-spacing: .25rem; }
+  letter-spacing: .25rem;
+  margin-bottom: 0; }
 
 .navbar-light .navbar-nav .nav-link {
   color: black; }
@@ -15,23 +31,24 @@ h1, h2, h3, h4, h5, h6 {
 li {
   font-size: medium; }
 
-.nav-tabs {
-  padding: 0 15px; }
+.nav {
+  flex-wrap: nowrap; }
 
 .tabSections {
   margin: 0 0 50px 0; }
 
 footer {
   padding: 20px 0;
-  border-top: #3b3b3b solid 2px;
+  border-top: #444444 solid 2px;
   text-align: center; }
 
 .text-white {
   text-align: center; }
 
 .containerBackground {
-  background-color: #3b3b3b;
+  background-color: #444444;
   padding-top: 5px;
+  padding-bottom: 5px;
   border: solid white 2px; }
 
 .tabSections a {
@@ -39,24 +56,20 @@ footer {
 
 #v-pills-tabContent .tab-pane {
   padding: 15px;
-  background-color: #3b3b3b; }
+  background-color: #444444; }
 
 .welcomePagePic {
   max-width: 600px; }
 
-.containerBackground button {
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
 .nav-pills .nav-link {
-  padding: 2px 100% 2px 0;
+  padding: 5px 100% 5px 0;
   color: white; }
 
 .nav-pills .nav-link:hover {
   background-color: #2b2a2a; }
 
 .nav-pills .nav-link.active {
-  background-color: rgba(0, 0, 0, 0); }
+  background-color: rgba(0, 0, 0, 0.979); }
 
 .nav-pills div {
   font-weight: bold;
