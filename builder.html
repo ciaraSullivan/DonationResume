@@ -46,12 +46,11 @@
           </a>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <div>Basic Information</div>
+              <div class="d-inline">Basic Information<a href="#welcomeSection" data-toggle="pill" role="tab" class="builderTab text-right"><span class="fa fa-question-circle fa-1x text-white pl-2"></span></a></div>
                 <a class="nav-link builderTab" id="nameSectionPill" data-toggle="pill" href="#nameSection" role="tab" aria-controls="name-Section" aria-selected="true">Name</a>
                 <a class="nav-link builderTab" id="descriptionSectionPill" data-toggle="pill" href="#descriptionSection" role="tab" aria-controls="description-Section" aria-selected="true">Description</a>
                 <a class="nav-link builderTab" id="dimensionSectionPill" data-toggle="pill" href="#dimensionSection" role="tab" aria-controls="dimension-Section" aria-selected="true">Dimension</a>
                 <a class="nav-link builderTab" id="conditionSectionPill" data-toggle="pill" href="#conditionSection" role="tab" aria-controls="condition-Section" aria-selected="true">Condition</a>
-                <a href="#welcomeSection" data-toggle="pill" role="tab" class="mt-4 nav-link builderTab"><span class="fa fa-question-circle"></span></a>
             </div>
           </div>
         </nav>                
@@ -62,11 +61,23 @@
             <h3>Welcome to Resume Builder!</h3>
             <div class="container">
               <div class="row my-2">
-                <p class="col-12 col-md-6 my-auto">
-                  Build the perfect resume for your cherished item. The final product will be a versatile pdf or text document that you could send to any institution around the country.<br><br>
-                  Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+                <p class="col my-auto">
+                  Build the perfect resume for your cherished item. The final product will be a versatile pdf or text document that you can send to any institution around the world.<br>
+                  Fill out as much of this form as possible. If you have questions along the way, refer back to this welcome screen or review the directions under each form section.
+                  <br><br>
+                  <span class="fa fa-question-circle fa-3x mr-2"></span>Return to this welcome screen for more information.<br><br>
+
+                  <button class="btn btn-light mr-2">Clear</button>Clears the entire form for a new entry.<br><br>
+               
+                  <button class="btn btn-light mr-2">Download</button>Choose whether to download a PDF or TXT version of your resume right to your computer.<br><br>
+               
+                  <button class="btn btn-light mr-2">Preview</button>View a preview of your resume.<br><br>
+
+                  Helpful Links:<br>
+                  <a href="/resources.html/#usingDonationBuilder" target="_blank">Using Donation Builder</a> |  <a href="/resources.html/#donationProcess" target="_blank">Donation Process</a> | <a href="/resources.html/#itemUse" target="_blank">Item Use</a>
+                  <br><br>
+                  <img src="Images/familyPhotograph.jpg" class="img-fluid" alt="donation resume builder welcome page family photograph">
                 </p>
-                <img src="Images/familyPhotograph.jpg" class="col-12 col-md-6 img-fluid" alt="donation resume builder welcome page family photograph">
               </div>
             </div>
           </div>
@@ -256,13 +267,72 @@
     </div>    
     <div class="row mt-2 align-items-center containerBackground"> <!--Tool Buttons-->
       <div class="col text-center px-0">
-        <button class="btn btn-light">Clear</button>
+        <button class="btn btn-light" id="clearButton">Clear</button>
+        <div class="modal fade" id="clearModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="clearModalLabel">Clear Resume</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                The clear button will clear all entries on this resume, even if you have not yet downloaded it. Are you sure you want to clear this resume?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col text-center px-0">
-        <button class="btn btn-light">Download</button>
+        <button class="btn btn-light" id="downloadButton">Download</button>
+        <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="downloadModalLabel">Download Resume</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Which version of your resume would you like to download?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Download PDF</button>
+                <button type="button" class="btn btn-primary">Download TXT</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col text-center px-0">
-        <button class="btn btn-light">Preview</button>
+        <button class="btn btn-light" id="previewButton">Preview</button>
+        <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="previewModalLabel">Preview Resume</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!--Preview of document-->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Download PDF</button>
+                <button type="button" class="btn btn-primary">Download TXT</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>  
     <footer class="row mt-3">

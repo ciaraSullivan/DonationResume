@@ -32,10 +32,20 @@ span[class=font-italic] {
     color:rgb(59, 59, 59);
 }
 
-h1, h2, h3, h4, h5, h6, .navbar-toggler span {
+h1, h2, h3, h4, h5, h6, .navbar-toggler span, b {
     font-family: $heading-font;
     letter-spacing: .25rem;
     margin-bottom: 0;
+}
+
+.modal-title, .modal-body {
+    color: $background-color;
+    font-family: $text-font;
+    text-align: left;
+}
+
+p {
+    padding: 10px 0;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -71,7 +81,12 @@ footer {
     border: solid $text-color 2px;
 }
 
-.tabSections a {
+.navbar-expand-md {
+    height: 100%;
+    align-items:flex-start;
+}
+
+.tabSections a, .tab-pane a {
     color: $text-color;
 }
 

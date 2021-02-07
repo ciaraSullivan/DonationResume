@@ -20,10 +20,18 @@ span[class=font-italic] {
   letter-spacing: 1px;
   color: #3b3b3b; }
 
-h1, h2, h3, h4, h5, h6, .navbar-toggler span {
+h1, h2, h3, h4, h5, h6, .navbar-toggler span, b {
   font-family: "Bodoni Moda", serif;
   letter-spacing: .25rem;
   margin-bottom: 0; }
+
+.modal-title, .modal-body {
+  color: black;
+  font-family: "Lato", sans-serif;
+  text-align: left; }
+
+p {
+  padding: 10px 0; }
 
 .navbar-light .navbar-nav .nav-link {
   color: black; }
@@ -51,7 +59,11 @@ footer {
   padding-bottom: 5px;
   border: solid white 2px; }
 
-.tabSections a {
+.navbar-expand-md {
+  height: 100%;
+  align-items: flex-start; }
+
+.tabSections a, .tab-pane a {
   color: white; }
 
 #v-pills-tabContent .tab-pane {
