@@ -39,10 +39,10 @@
   </header>
   <div class="container">
     <div class="row mt-md-3"> <!--Builder tools-->
-      <div class="col-12 col-md-3 mb-3 mb-md-0"> <!--Builder Menu-->
+      <div class="col-12 col-md-3 mb-2 mb-md-0 pl-md-0"> <!--Builder Menu-->
         <nav class="navbar navbar-expand-md containerBackground">
-          <a class="btn btn-secondary navbar-toggler mx-auto px-2" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span>Menu</span>
+          <a class="btn btn-secondary px-5 navbar-toggler mx-auto px-2" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
           </a>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -51,6 +51,20 @@
                 <a class="nav-link builderTab" id="descriptionSectionPill" data-toggle="pill" href="#descriptionSection" role="tab" aria-controls="description-Section" aria-selected="true">Description</a>
                 <a class="nav-link builderTab" id="dimensionSectionPill" data-toggle="pill" href="#dimensionSection" role="tab" aria-controls="dimension-Section" aria-selected="true">Dimension</a>
                 <a class="nav-link builderTab" id="conditionSectionPill" data-toggle="pill" href="#conditionSection" role="tab" aria-controls="condition-Section" aria-selected="true">Condition</a>
+                <a class="nav-link builderTab" id="fileSectionPill" data-toggle="pill" href="#fileSection" role="tab" aria-controls="file-Section" aria-selected="true">Files</a>
+                <div>Significance</div>
+                <a class="nav-link builderTab" id="eraSectionPill" data-toggle="pill" href="#eraSection" role="tab" aria-controls="era-Section" aria-selected="true">Era</a>
+                <a class="nav-link builderTab" id="locationSectionPill" data-toggle="pill" href="#locationSection" role="tab" aria-controls="location-Section" aria-selected="true">Location</a>
+                <a class="nav-link builderTab" id="subjectSectionPill" data-toggle="pill" href="#subjectSection" role="tab" aria-controls="subject-Section" aria-selected="true">Subject</a>
+                <a class="nav-link builderTab" id="storySectionPill" data-toggle="pill" href="#storySection" role="tab" aria-controls="story-Section" aria-selected="true">Story</a>
+                <a class="nav-link builderTab" id="storageSectionPill" data-toggle="pill" href="#storageSection" role="tab" aria-controls="storage-Section" aria-selected="true">Storage</a>
+                <a class="nav-link builderTab" id="materialsSectionPill" data-toggle="pill" href="#materialsSection" role="tab" aria-controls="materials-Section" aria-selected="true">Materials</a>
+                <div>Documentation</div>
+                <a class="nav-link builderTab" id="taxSectionPill" data-toggle="pill" href="#taxSection" role="tab" aria-controls="tax-Section" aria-selected="true">Tax Information</a>
+                <a class="nav-link builderTab" id="ownershipSectionPill" data-toggle="pill" href="#ownershipSection" role="tab" aria-controls="ownership-Section" aria-selected="true">Ownership</a>
+                <a class="nav-link builderTab" id="conditionDonationSectionPill" data-toggle="pill" href="#conditionDonationSection" role="tab" aria-controls="conditionDonation-Section" aria-selected="true">Conditions of Donation</a>
+                <a class="nav-link builderTab" id="specConsidSectionPill" data-toggle="pill" href="#specConsidSection" role="tab" aria-controls="specConsid-Section" aria-selected="true">Special Considerations</a>
+                <a class="nav-link builderTab" id="otherSectionPill" data-toggle="pill" href="#otherSection" role="tab" aria-controls="other-Section" aria-selected="true">Other</a>
             </div>
           </div>
         </nav>                
@@ -105,11 +119,11 @@
               <div class="form-group row">
                 <div class="offset-1 offset-md-3">
                   <div class="form-check-inline">
-                    <input type="radio" class="form-check-input" id="builderPrefPhone" name="builderPrefPhone" value="prefPhone" />
+                    <input type="radio" class="form-check-input" id="builderPrefPhone" name="builderPrefContact" value="prefPhone" />
                     <label for="builderPrefPhone" class="form-check-label">Prefer Phone</label>
                   </div>
                   <div class="form-check-inline">
-                    <input type="radio" class="form-check-input" id="builderPrefEmail" name="builderPrefEmail" value="prefEmail" />
+                    <input type="radio" class="form-check-input" id="builderPrefEmail" name="builderPrefContact" value="prefEmail" />
                     <label for="builderPrefEmail" class="form-check-label">Prefer Email</label>
                   </div>
                 </div>
@@ -117,7 +131,7 @@
               <div class="form-group row">
                 <label for="builderAddress" class="col-md-2 col-form-label">Address</label>
                 <div class="col">
-                  <textarea class="form-control" id="builderAddress" name="builderAddress" rows="3">City and state at minimum</textarea>
+                  <textarea class="form-control" id="builderAddress" name="builderAddress" rows="3" placeholder="City and State"></textarea>
                 </div>
               </div>
             </form>
@@ -195,14 +209,14 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-md-2 col-form-label">Would you be open to shipping your item(s)?</label>
+                <label class="col-md-5 col-form-label">Would you be open to shipping your item(s)?</label>
                 <div class="col">
                   <div class="form-check-inline">
-                    <input type="radio" class="form-check-input" id="shipYes" name="shipYes" value="yes" />
+                    <input type="radio" class="form-check-input" id="shipYes" name="shipChoice" value="yes" />
                     <label for="shipYes" class="form-check-label">Yes</label>
                   </div>
                   <div class="form-check-inline">
-                    <input type="radio" class="form-check-input" id="shipNo" name="shipNo" value="no" />
+                    <input type="radio" class="form-check-input" id="shipNo" name="shipChoice" value="no" />
                     <label for="shipNo" class="form-check-label">No</label>
                   </div>
                 </div>
@@ -210,18 +224,18 @@
               <div class="form-group row">
                 <label for="shippingInfo" class="col-md-2 col-form-label">Shipping Information</label>
                 <div class="col">
-                  <textarea class="form-control" id="shippingInfo" name="shippingInfo" rows="3">More information...</textarea>
+                  <textarea class="form-control" id="shippingInfo" name="shippingInfo" rows="3" placeholder="More information..."></textarea>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-md-2 col-form-label">Is this item fragile?</label>
+                <label class="col-md-5 col-form-label">Is this item fragile?</label>
                 <div class="col">
                   <div class="form-check-inline">
-                    <input type="radio" class="form-check-input" id="fragileYes" name="fragileYes" value="yes" />
+                    <input type="radio" class="form-check-input" id="fragileYes" name="fragileChoice" value="yes" />
                     <label for="fragileYes" class="form-check-label">Yes</label>
                   </div>
                   <div class="form-check-inline">
-                    <input type="radio" class="form-check-input" id="fragileNo" name="fragileNo" value="no" />
+                    <input type="radio" class="form-check-input" id="fragileNo" name="fragileChoice" value="no" />
                     <label for="fragileNo" class="form-check-label">No</label>
                   </div>
                 </div>
@@ -253,6 +267,308 @@
                 <label for="conditionDesc" class="col-md-2 col-form-label">Description</label>
                 <div class="col">
                   <textarea class="form-control" id="conditionDesc" name="conditionDesc" rows="3"></textarea>
+                </div>
+              </div>
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="fileSection" role="tabpanel" aria-labelledby="file-Section">
+            <h3>Files</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label for="builderFiles" class="col-md-2 col-form-label">Files</label>
+                <div class="col">
+                  <input type="file" class="form-control-file" id="builderFiles" name="builderFiles" onchange="updateList()" multiple>
+                  <p>Selected files:</p>
+                  <div id="fileList"></div>
+                </div>
+              </div>
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="eraSection" role="tabpanel" aria-labelledby="era-Section">
+            <h3>Era</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label for="builderEra" class="col-md-2 col-form-label">Date Range</label>
+                <div class="col">
+                  <input type="text" class="form-control" id="builderEra" name="builderEraFrom" placeholder="From" />
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" id="builderEraTo" name="builderEraTo" placeholder="To" />
+                </div>
+              </div>
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="locationSection" role="tabpanel" aria-labelledby="location-Section">
+            <h3>Location</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label for="locationSpec" class="col-md-2 col-form-label">Specific Location</label>
+                <div class="col">
+                  <textarea class="form-control" id="locationSpec" name="locationSpec" rows="3" placeholder="ex. 555 Jefferson Ave."></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="locationGen" class="col-md-2 col-form-label">General Location</label>
+                <div class="col">
+                  <textarea class="form-control" id="locationGen" name="locationGen" rows="2" placeholder="ex. Middle East, American South, North Dakota"></textarea>
+                </div>
+              </div>
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="subjectSection" role="tabpanel" aria-labelledby="subject-Section">
+            <h3>Subject</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label for="subjectSpec" class="col-md-2 col-form-label">Specific Subject</label>
+                <div class="col">
+                  <textarea class="form-control" id="subjectSpec" name="subjectSpec" rows="3" placeholder="ex. History of Traverse City, Designer Coco Chanel 1927-1930"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="subjectGen" class="col-md-2 col-form-label">General Subject</label>
+                <div class="col">
+                  <textarea class="form-control" id="subjectGen" name="subjectGen" rows="3" placeholder="ex. Michigan State History, 20th Century French Fashion"></textarea>
+                </div>
+              </div>
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="storySection" role="tabpanel" aria-labelledby="story-Section">
+            <h3>Story</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label for="itemStory" class="col-md-2 col-form-label">Story</label>
+                <div class="col">
+                  <textarea class="form-control" id="itemStory" name="itemStory" rows="4"></textarea>
+                </div>
+              </div>
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="storageSection" role="tabpanel" aria-labelledby="storage-Section">
+            <h3>Storage</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label class="col-md-4 col-form-label">Have these item(s) been specially stored?</label>
+                <div class="col">
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="storageYes" name="storageChoice" value="yes" />
+                    <label for="storageYes" class="form-check-label">Yes</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="storageNo" name="storageChoice" value="no" />
+                    <label for="storageNo" class="form-check-label">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="howItemStored" class="col-md-2 col-form-label">Storage of item(s)?</label>
+                <div class="col">
+                  <textarea class="form-control" id="howItemStored" name="howItemStored" rows="4"></textarea>
+                </div>
+              </div>
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="materialsSection" role="tabpanel" aria-labelledby="materials-Section">
+            <h3>Materials</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label for="materialsList" class="col-md-2 col-form-label">Materials</label>
+                <div class="col">
+                  <textarea class="form-control" id="materialsList" name="materialsList" rows="3" placeholder="ex. paper, iron, oil paint"></textarea>
+                </div>
+              </div>
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="taxSection" role="tabpanel" aria-labelledby="tax-Section">
+            <h3>Tax Information</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label class="col-md-6 col-form-label">Are you interested in using this donation as a tax deduction?</label>
+                <div class="col">
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="taxYes" name="taxChoice" value="yes" />
+                    <label for="taxYes" class="form-check-label">Yes</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="taxNo" name="taxChoice" value="no" />
+                    <label for="taxNo" class="form-check-label">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="materialsList" class="col-md-2 col-form-label">Value</label>
+                <div class="col d-inline">
+                  <input type="number" id="taxValue" name="taxValue" class="form-control">
+                  <select class="custom-select" id="valueUnit" name="valueUnit">
+                    <option value="USD" selected="selected">United States Dollars</option>
+	                  <option value="EUR">Euro</option>
+                    <option value="GBP">United Kingdom Pounds</option>
+                    <option value="AUD">Australia Dollars</option>
+                    <option value="other">Other (Specify in Description Section)</option>
+                  </select>
+                </div>
+              </div> 
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ownershipSection" role="tabpanel" aria-labelledby="ownership-Section">
+            <h3>Ownership</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label class="col-md-6 col-form-label">Can you prove ownership?</label>
+                <div class="col">
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="ownYes" name="ownershipChoice" value="yes" />
+                    <label for="ownYes" class="form-check-label">Yes</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="ownNo" name="ownershipChoice" value="no" />
+                    <label for="ownNo" class="form-check-label">No</label>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works
+              BE SURE TO ADD DOCUMENTS TO FILE SECTION </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="conditionDonationSection" role="tabpanel" aria-labelledby="conditionDonation-Section"> <!--Change to wishes?-->
+            <h3>Conditions of Donation</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label class="col-md-6 col-form-label">Do you have specific conditions for your donation?</label>
+                <div class="col">
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="conditionYes" name="conditionChoice" value="yes" />
+                    <label for="conditionYes" class="form-check-label">Yes</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="conditionNo" name="conditionChoice" value="no" />
+                    <label for="conditionNo" class="form-check-label">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="donationWishes" class="col-md-2 col-form-label">If so, what are your wishes?</label>
+                <div class="col">
+                  <textarea class="form-control" id="donationWishes" name="donationWishes" rows="3"></textarea>
+                </div>
+              </div>
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="specConsidSection" role="tabpanel" aria-labelledby="specConsid-Section">
+            <h3>Special Considerations</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label class="col-md-6 col-form-label">Does your donation include any harmful or potentially dangerous materials?<br>(ex. explosives, bodily fluids, illegal substances)</label>
+                <div class="col">
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="dangerousYes" name="dangerousChoice" value="yes" />
+                    <label for="dangerousYes" class="form-check-label">Yes</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="dangerousNo" name="dangerousChoice" value="no" />
+                    <label for="dangerousNo" class="form-check-label">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-6 col-form-label">Does your donation include any items that fall under NAGPRA?</label>
+                <div class="col">
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="nagpraYes" name="nagpraChoice" value="yes" />
+                    <label for="nagpraYes" class="form-check-label">Yes</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="nagpraNo" name="nagpraChoice" value="no" />
+                    <label for="nagpraNo" class="form-check-label">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-6 col-form-label">Does your donation include any sensitive or explicit content?</label>
+                <div class="col">
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="explicitYes" name="explicitChoice" value="yes" />
+                    <label for="explicitYes" class="form-check-label">Yes</label>
+                  </div>
+                  <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" id="explicitNo" name="explicitChoice" value="no" />
+                    <label for="explicitNo" class="form-check-label">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="specialDescription" class="col-md-6 col-form-label">Anything else we should know about?<br>(And if you responded 'Yes' on any of the above questions)</label>
+                <div class="col">
+                  <textarea class="form-control" id="specialDescription" name="specialDescription" rows="4"></textarea>
+                </div>
+              </div>
+            </form>
+            <h6>More information:</h6>
+            <p>Description of how this works </p>
+            <div>
+              Helpful Links: <a href="" target="_blank">Link 1</a>   <a href="" target="_blank">Link 2</a>  <a href="" target="_blank">Link 3</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="otherSection" role="tabpanel" aria-labelledby="other-Section">
+            <h3>Other?</h3>
+            <form class="container my-3">
+              <div class="form-group row">
+                <label for="otherDesc" class="col-md-4 col-form-label">Any final notes or information you'd like to add</label>
+                <div class="col">
+                  <textarea class="form-control" id="otherDesc" name="otherDesc" rows="4"></textarea>
                 </div>
               </div>
             </form>

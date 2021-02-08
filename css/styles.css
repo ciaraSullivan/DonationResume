@@ -36,7 +36,7 @@ p {
 .navbar-light .navbar-nav .nav-link {
   color: black; }
 
-li {
+nav li {
   font-size: medium; }
 
 .nav {
@@ -74,8 +74,9 @@ footer {
   max-width: 600px; }
 
 .nav-pills .nav-link {
-  padding: 5px 100% 5px 0;
-  color: white; }
+  padding: 5px 0;
+  color: white;
+  border-radius: 0; }
 
 .nav-pills .nav-link:hover {
   background-color: #2b2a2a; }

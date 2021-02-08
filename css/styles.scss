@@ -52,7 +52,7 @@ p {
     color: rgb(0, 0, 0);
 }
 
-li {
+nav li {
     font-size: medium;
 }
 
@@ -101,8 +101,9 @@ footer {
 
 .nav-pills {
     .nav-link {
-        padding: 5px 100% 5px 0;
+        padding: 5px 0;
         color: $text-color;
+        border-radius: 0;
     }
 
     .nav-link:hover {
