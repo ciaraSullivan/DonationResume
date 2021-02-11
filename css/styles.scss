@@ -10,7 +10,7 @@ $captions: rgb(253, 227, 231);
 body {
     background-color: $background-color;
     color: $text-color;
-    font-size: small;
+    font-size: medium;
     font-family: $text-font;
 }
 
@@ -88,6 +88,13 @@ footer {
 
 .tabSections a, .tab-pane a {
     color: $text-color;
+}
+
+a[target="_blank"] {
+    color: rgb(247, 210, 216);
+    font-weight: bold;
+    padding: 0 5px;
+    white-space: nowrap;
 }
 
 #v-pills-tabContent .tab-pane {

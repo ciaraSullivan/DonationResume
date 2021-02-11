@@ -2,7 +2,7 @@
 body {
   background-color: black;
   color: white;
-  font-size: small;
+  font-size: medium;
   font-family: "Lato", sans-serif; }
 
 .nav-tabs .nav-link.active {
@@ -65,6 +65,12 @@ footer {
 
 .tabSections a, .tab-pane a {
   color: white; }
+
+a[target="_blank"] {
+  color: #f7d2d8;
+  font-weight: bold;
+  padding: 0 5px;
+  white-space: nowrap; }
 
 #v-pills-tabContent .tab-pane {
   padding: 15px;
