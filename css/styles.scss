@@ -56,8 +56,8 @@ nav li {
     font-size: medium;
 }
 
-.nav {
-    flex-wrap: nowrap;
+.bg-light {
+    color: black;
 }
 
 .tabSections {
@@ -91,10 +91,9 @@ footer {
 }
 
 a[target="_blank"] {
-    color: rgb(247, 210, 216);
+    color: rgb(247, 222, 226);
     font-weight: bold;
     padding: 0 5px;
-    white-space: nowrap;
 }
 
 #v-pills-tabContent .tab-pane {

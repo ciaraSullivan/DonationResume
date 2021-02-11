@@ -39,8 +39,8 @@ p {
 nav li {
   font-size: medium; }
 
-.nav {
-  flex-wrap: nowrap; }
+.bg-light {
+  color: black; }
 
 .tabSections {
   margin: 0 0 50px 0; }
@@ -67,10 +67,9 @@ footer {
   color: white; }
 
 a[target="_blank"] {
-  color: #f7d2d8;
+  color: #f7dee2;
   font-weight: bold;
-  padding: 0 5px;
-  white-space: nowrap; }
+  padding: 0 5px; }
 
 #v-pills-tabContent .tab-pane {
   padding: 15px;
