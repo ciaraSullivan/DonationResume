@@ -1,0 +1,81 @@
+# Donation Resume
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <title>Donation Resume</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <div class="offset-md-8">
+          <h3 class="mb-0 heading" style="font-size: 1rem">Donation Resume</h3><span class="font-italic" style="font-size: .75rem">Make giving easy</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end pr-md-5" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="builder.html">Builder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="row my-1 align-items-center"> <!--Page heading-->
+      <div class="col text-white my-5">
+        <h3>Donation Resume</h3>
+        <div class="font-italic">Make giving easy</div>
+      </div>
+    </div>
+    <div class="row align-items-center"> <!--first row of pic and content-->
+      <div class="col-12 col-md-7 containerBackground py-2 px-2 py-md-5 px-md-5">
+        <h5>What is it?</h5>
+        <p>Donation Resume is your one stop shop for donating your prized posessions to an educational institution. For years the process of donation has been confusing and inconsistent. Our Resume Builder tool creates a professional, comprehensive document to send to any institution with ease. Once you've built your resume, our Resources will guide you through the process so that your items can serve communities as effectively as possible.</p>
+      </div>
+      <div class="col-12 col-md-5 mt-3 mt-md-0">
+        <img src="img/artPieceMuseum.jpg" alt="donation resume home page" class="img-fluid">
+      </div>
+    </div>
+    <div class="row my-3 align-items-center"> <!--second row of pic and content-->
+      <div class="col-12 order-last order-md-first col-md-5 mt-3 mt-md-0">
+        <img src="img/photographCollection.jpg" alt="donation resume home page" class="img-fluid">
+      </div>
+      <div class="col-12 col-md-7 containerBackground py-2 px-2 py-md-5 px-md-5">
+        <h5>Why use it?</h5>
+        <p>Museums, libraries, and other collection-based institutions have long struggled with diversity (racial, gender, socioeconomic, cultural, etc). These barriers affect institution collections, and hinders their ability to tell the stories of their communities to the fullest extent. This is made worse by donation policies that are confusing, inaccessible, and inconsistent, pushing new groups of donors further out of the process. Our goal is to make donations easy, so that these institutions can better serve their communities and truely commit to diversity at all levels.</p>
+      </div>
+    </div>
+    <footer class="row mt-5">
+      <div class="col">
+        <p>Donation Resume 2021</p>
+      </div>
+    </footer>    
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> 
+  <script src="javascript.js"></script>
+</body>
+</html>
