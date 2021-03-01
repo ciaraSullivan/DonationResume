@@ -27,9 +27,6 @@ $(function(){
 
 });
 
-let name8 = document.getElementById("builderName").value;
-let value = name8.value;
-
 updateList = function() {
   var input = document.getElementById('builderFiles');
   var output = document.getElementById('fileList');
@@ -38,12 +35,4 @@ updateList = function() {
       children += '<li>' + input.files.item(i).name + '</li>';
   }
   output.innerHTML = '<ul>'+children+'</ul>';
-}
-
-var docDefinition = {
-	content: [
-		'Another paragraph, this time a little bit longer to make sure, this line will be divided into at least two lines',
-    name8
-	]
-	//pdfmake
 }
