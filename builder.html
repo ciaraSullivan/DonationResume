@@ -109,7 +109,7 @@
           </div>
           <div class="tab-pane fade" id="nameSection" role="tabpanel" aria-labelledby="name-Section">
             <h3>Name</h3>
-            <form class="container my-3">
+            <form class="container my-3" id="nameForm">
               <div class="form-group row">
                 <label for="builderName" class="col-md-2 col-form-label">Name</label>
                 <div class="col">
@@ -141,29 +141,42 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label for="builderAddress" class="col-md-2 col-form-label">Address</label>
+                <label for="builderAddress" class="col-md-2 col-form-label">Address 
+                    <sup><a class="fa fa-plus" data-toggle="collapse" href="#addressInformation" role="button" aria-expanded="false" aria-controls="addressInformation"></a></sup>
+                </label>
                 <div class="col">
+                  <div class="collapse" id="addressInformation">
+                    This section is up to your discretion. You do not have to provide your full address, but consider adding your city, state, and country at minimum. This will give institutions an idea of how far the item would need to be sent in the event that it is accepted into their collection.
+                  </div>
                   <textarea class="form-control" id="builderAddress" name="builderAddress" rows="3" placeholder="City and State"></textarea>
                 </div>
               </div>
             </form>
             <h5>More information:</h5>
-            <p>First and foremost, how can the institution get a hold of you? Do you prefer being contacted by phone or by email? The fields on this tool are meant to be flexible, so if you’re donating on behalf of a business or organization, it is fine to use that in the ‘Name’ section.
-            
-            Address<br> This section is up to your discretion. You do not have to provide your full address, but consider adding your city, state, and country at minimum. This will give institutions an idea of how far the item would need to be sent in the event that it is accepted into their collection.</p>
+            <p>First and foremost, how can the institution get a hold of you? Do you prefer being contacted by phone or by email? The fields on this tool are meant to be flexible, so if you’re donating on behalf of a business or organization, it is fine to use that in the ‘Name’ section.</p>
           </div>
           <div class="tab-pane fade" id="descriptionSection" role="tabpanel" aria-labelledby="description-Section">
             <h3>Description</h3>
             <form class="container my-3">
               <div class="form-group row">
-                <label for="builderItemName" class="col-md-2 col-form-label">Name of the Item(s)</label>
+                <label for="builderItemName" class="col-md-2 col-form-label">Name of the Item(s) 
+                  <sup><a class="fa fa-plus" data-toggle="collapse" href="#itemNameInformation" role="button" aria-expanded="false" aria-controls="itemNameInformation"></a></sup>
+                </label>
                 <div class="col">
+                  <div class="collapse" id="itemNameInformation">
+                    If you were referring to this item, what would you call it? <br>ex. City Hall Photographs 1856, Andy Warhol “Campbell’s Soup Cans”, Michigan Tiger’s Glove
+                  </div>
                   <input type="text" class="form-control" id="builderItemName" name="builderItemName" placeholder="Item(s) Name" />
                 </div>
               </div>
               <div class="form-group row">
-                <label for="itemType" class="col-md-2 col-form-label">Type of Item(s)</label>
+                <label for="itemType" class="col-md-2 col-form-label">Type of Item(s) 
+                  <sup><a class="fa fa-plus" data-toggle="collapse" href="#itemTypeInformation" role="button" aria-expanded="false" aria-controls="itemTypeInformation"></a></sup>
+                </label>
                 <div class="col">
+                  <div class="collapse" id="itemTypeInformation">
+                    Single Item – one object, Collection of Items – multiple objects.
+                  </div>
                   <select class="custom-select" id="itemType" name="itemType">
                     <option>Select...</option>
                     <option value="singleItem">Single Item</option>
@@ -172,37 +185,43 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label for="itemMedium" class="col-md-2 col-form-label">Medium</label>
+                <label for="itemMedium" class="col-md-2 col-form-label">Medium 
+                  <sup><a class="fa fa-plus" data-toggle="collapse" href="#mediumInformation" role="button" aria-expanded="false" aria-controls="mediumInformation"></a></sup>
+                </label>
                 <div class="col">
+                  <div class="collapse" id="mediumInformation">
+                    This should be a general summary of what the item is. You’ll be able to go into more detail later. <br>
+                    ex. Photographs, Screen Print, Baseball Glove
+                  </div>
                   <input type="text" class="form-control" id="itemMedium" name="itemMedium" placeholder="Medium" />
                 </div>
               </div>
               <div class="form-group row">
-                <label for="builderItemDescription" class="col-md-2 col-form-label">Description</label>
+                <label for="builderItemDescription" class="col-md-2 col-form-label">Description 
+                  <sup><a class="fa fa-plus" data-toggle="collapse" href="#descInformation" role="button" aria-expanded="false" aria-controls="descInformation"></a></sup>
+                </label>
                 <div class="col">
+                  <div class="collapse" id="descInformation">
+                    Later on you’ll be able to tell more specific details, like the story of the item (how you got it, any folklore surrounding it, etc.), the materials used, the condition, subject areas, and more. <br>*You may choose to fill out the rest of the form first, then come back here to write a description later on.
+                  </div>
                   <textarea class="form-control" id="builderItemDescription" name="builderItemDescription" rows="4"></textarea>
                 </div>
               </div>
             </form>
             <h5>More information:</h5>
-            <p>This section should serve as an overall description of your item(s).
-              Name of the Item(s): If you were referring to this item, what would you call it? <br>
-              ex. City Hall Photographs 1856, Andy Warhol “Campbell’s Soup Cans”, Michigan Tiger’s Glove
-              
-              Type of Item(s)<br> Single Item – one object, Collection of Items – multiple objects.
-              
-              Medium<br> This should be a general summary of what the item is. You’ll be able to go into more detail later. 
-              ex. Photographs, Screen Print, Baseball Glove
-              
-              Description<br> Later on you’ll be able to tell more specific details, like the story of the item (how you got it, any folklore surrounding it, etc.), the materials used, the condition, subject areas, and more. 
-              *You may choose to fill out the rest of the form first, then come back here to write a description later on. </p>
+            <p>This section should serve as an overall description of your item(s).</p>
           </div>
           <div class="tab-pane fade" id="dimensionSection" role="tabpanel" aria-labelledby="dimension-Section">
             <h3>Dimensions</h3>
             <form class="container my-3">
               <div class="form-group row">
-                <label for="itemSize" class="col-md-2 col-form-label">Item Size</label>
+                <label for="itemSize" class="col-md-2 col-form-label">Item Size 
+                  <sup><a class="fa fa-plus" data-toggle="collapse" href="#itemSizeInformation" role="button" aria-expanded="false" aria-controls="itemSizeInformation"></a></sup>
+                </label>
                 <div class="col">
+                  <div class="collapse" id="itemSizeInformation">
+                    Be as accurate and detailed as possible. What is the maximum amount of space that this could take up? Make sure to select the units your using. If the dimensions of your item(s) are more complicated, feel free to describe them as best you can in the Description section.
+                  </div>
                   <input type="text" id="itemSize" name="itemSize" placeholder="length x width x depth" class="form-control">
                   <select class="custom-select" id="sizeUnit" name="sizeUnit">
                     <option>Select...</option>
@@ -214,8 +233,13 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label for="itemWeight" class="col-md-2 col-form-label">Item Weight</label>
+                <label for="itemWeight" class="col-md-2 col-form-label">Item Weight 
+                  <sup><a class="fa fa-plus" data-toggle="collapse" href="#itemWeightInformation" role="button" aria-expanded="false" aria-controls="itemWeightInformation"></a></sup>
+                </label>
                 <div class="col">
+                  <div class="collapse" id="itemWeightInformation">
+                    This doesn't need to be exact, just give an estimate. Think of it as if the item needed to be shipped, which cost bracket would it fall under?
+                  </div>
                   <input type="number" id="itemWeight" name="itemWeight" placeholder="Item Weight" class="form-control">
                   <select class="custom-select" id="weightUnit" name="weightUnit">
                     <option>Select...</option>
@@ -253,25 +277,31 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label for="shippingInfo" class="col-md-2 col-form-label">Shipping Information</label>
+                <label for="shippingInfo" class="col-md-2 col-form-label">Shipping Information 
+                  <sup><a class="fa fa-plus" data-toggle="collapse" href="#shippingInformation" role="button" aria-expanded="false" aria-controls="shippingInformation"></a></sup>
+                </label>
                 <div class="col">
+                  <div class="collapse" id="shippingInformation">
+                    This is an area to explain potential challenges in shipping or measuring your item. How is it fragile? Why aren’t you open to shipping it to an institution?
+                  </div>
                   <textarea class="form-control" id="shippingInfo" name="shippingInfo" rows="3" placeholder="More information..."></textarea>
                 </div>
               </div>
             </form>
             <h5>More information:</h5>
-            <p>Institutions would probably be willing to take anything you’re willing to give, but unfortunately they need to be able to store it. This information will help them be able to ship the item if necessary, store it, and display it. Even if you aren’t planning to ship anything, please fill out the item’s weight and dimensions to the best of your ability.
-
-            Item Size and Weight<br> Be as accurate and detailed as possible. What is the maximum amount of space that this could take up? Make sure to select the units your using. If the dimensions of your item(s) are more complicated, feel free to describe them as best you can in the Description section.
-            
-            Shipping Information<br> This is an area to explain potential challenges in shipping or measuring your item. How is it fragile? Why aren’t you open to shipping it to an institution?</p>
+            <p>Institutions would probably be willing to take anything you’re willing to give, but unfortunately they need to be able to store it. This information will help them be able to ship the item if necessary, store it, and display it. Even if you aren’t planning to ship anything, please fill out the item’s weight and dimensions to the best of your ability.</p>
           </div>
           <div class="tab-pane fade" id="conditionSection" role="tabpanel" aria-labelledby="condition-Section">
             <h3>Condition</h3>
             <form class="container my-3">
               <div class="form-group row">
-                <label for="condition" class="col-md-4 col-form-label">Condition of the Item(s)</label>
+                <label for="condition" class="col-md-4 col-form-label">Condition of the Item(s) 
+                  <sup><a class="fa fa-plus" data-toggle="collapse" href="#conditionInformation" role="button" aria-expanded="false" aria-controls="conditionInformation"></a></sup>
+                </label>
                 <div class="col">
+                  <div class="collapse" id="conditionInformation">
+                    See chart below.
+                  </div>
                   <select class="custom-select" id="condition" name="condition">
                     <option>Select...</option>
                     <option value="excellent">Excellent</option>
@@ -283,8 +313,13 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label for="conditionDesc" class="col-md-2 col-form-label">Description</label>
+                <label for="conditionDesc" class="col-md-2 col-form-label">Description 
+                  <sup><a class="fa fa-plus" data-toggle="collapse" href="#conditionDescInformation" role="button" aria-expanded="false" aria-controls="conditionDescInformation"></a></sup>
+                </label>
                 <div class="col">
+                  <div class="collapse" id="conditionDescInformation">
+                    Explain what damage has occurred and what repairs are needed. The more detail, the better.
+                  </div>
                   <textarea class="form-control" id="conditionDesc" name="conditionDesc" rows="3"></textarea>
                 </div>
               </div>
@@ -292,9 +327,7 @@
             <h5>More information:</h5>
             <p>Describe the condition of the items in as much detail as possible. You will be able to add pictures and documents later on, so this is mainly where you can explain the damage and what you’ve done to repair it.
 
-            Keep in mind, an item does not have to be in excellent condition for an institution to take it. Items are used in a number of different ways, and sometimes the damage to the item is PART of it’s story! And if repairs or restoration needs to be done on the item, the institutes will hire professionals to bring it back to life. That being said, it is possible that in some cases, the restoration required is more than the institution is willing to take on.
-
-            Description<br> Explain what damage has occurred and what repairs are needed. The more detail, the better. 
+            Keep in mind, an item does not have to be in excellent condition for an institution to take it. Items are used in a number of different ways, and sometimes the damage to the item is PART of it’s story! And if repairs or restoration needs to be done on the item, the institutes will hire professionals to bring it back to life. That being said, it is possible that in some cases, the restoration required is more than the institution is willing to take on. 
             </p>
             <div class="container">
               <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
@@ -364,9 +397,7 @@
             <h5>More information:</h5>
             <p>There are a number of dates that might be relevant to your item. Maybe it was made in one decade, but it wasn’t really relevant until decades later. Maybe it was just a plain old mug until Elvis drank out of it in the 1950’s. This is all party of the item’s story, and different dates are significant for different reasons. You will be able to go through the story of the item later on, and that’s where you can put all of the dates and time periods that are a part of your item. 
             
-            If you aren’t sure, that’s okay. Researchers in institutions are experts at dating items.
-            
-            In this section, try to be general. <br>
+            If you aren’t sure, that’s okay. Researchers in institutions are experts at dating items. In this section, try to be general.
             ex. 1960’s, 13th - 18th Century, November 1987</p>
             <div>
               Helpful Links: <a href="https://entertainment.howstuffworks.com/arts/artwork/antique.htm#pt3" target="_blank">Dating Antiques</a>
@@ -393,7 +424,9 @@
 
               Usually, a location depends on the story of the item. Is it important because of it’s maker or where it was found? If you aren’t sure, feel free to leave it blank.
               
-              Specific vs General<br> The more specific, the better. But what if the item’s importance extends beyond one single location. What if it was popular all over the world? Think about the story of the item, who’s story does it tell? Does it tell the story of a specific neighborhood, city, state, country, continent, or area? <br>
+              Specific vs General 
+              The more specific, the better. But what if the item’s importance extends beyond one single location. What if it was popular all over the world? Think about the story of the item, who’s story does it tell? Does it tell the story of a specific neighborhood, city, state, country, continent, or area? 
+
               For example, a designer dress may be important because of where it was made, but it could also be important who owned the dress and where they lived.</p>
           </div>
           <div class="tab-pane fade" id="subjectSection" role="tabpanel" aria-labelledby="subject-Section">
@@ -415,8 +448,9 @@
             <h5>More information:</h5>
             <p>This section is similar to the location section, there is one area for general subject areas and another for specifics. Subject areas are how institutions make sense of their items. Items can have many subject areas that they fall under. This way, if someone is looking for a specific topic, they find as many relevant results as possible. The institution will likely make this decision themselves, but it is helpful for you to give them a basic idea.
             
-            Specific vs General<br> The more specific, the better. Think of this like sections in a library. What general section would this item go in? Within that section, what shelf would it fall under?
-            <br>
+            Specific vs General
+            The more specific, the better. Think of this like sections in a library. What general section would this item go in? Within that section, what shelf would it fall under?
+            
             For example, a collection of Navajo jewelry may have general subjects (Native American History/Culture, Jewelry) and specific subjects (Navajo History 1860-1890, Native American Jewelry Techniques).</p>
             <div>
               Helpful Links: <a href="https://id.loc.gov/authorities/subjects.html" target="_blank">Library of Congress Subject Headings</a>
@@ -695,7 +729,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Download PDF</button>
+                <button type="button" class="btn btn-primary" onclick="">Download PDF</button>
                 <button type="button" class="btn btn-primary">Download TXT</button>
               </div>
             </div>
@@ -718,7 +752,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary">Download PDF</button>
+                <button type="button" class="btn btn-primary" onclick="pdfMake.createPdf(docDefinition).open()">Download PDF</button>
                 <button type="button" class="btn btn-primary">Download TXT</button>
               </div>
             </div>
@@ -736,6 +770,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3h56lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/pdfmake.min.js" integrity="sha512-HLbtvcctT6uyv5bExN/qekjQvFIl46bwjEq6PBvFogNfZ0YGVE+N3w6L+hGaJsGPWnMcAQ2qK8Itt43mGzGy8Q==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.70/vfs_fonts.js" integrity="sha512-vv3EN6dNaQeEWDcxrKPFYSFba/kgm//IUnvLPMPadaUf5+ylZyx4cKxuc4HdBf0PPAlM7560DV63ZcolRJFPqA==" crossorigin="anonymous"></script>
   <script src="javascript.js"></script>
 </body>
 </html>

@@ -10,6 +10,9 @@ body {
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff; }
 
+sup a:hover, sup a:active {
+  text-decoration: none; }
+
 .bg-light {
   color: black; }
 

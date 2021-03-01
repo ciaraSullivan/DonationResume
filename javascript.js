@@ -1,4 +1,5 @@
 $(function(){
+
   $('.builderTab').click(function(){
     if ($('.builderTab').siblings('a').hasClass("active")) {
       $('.builderTab').siblings('a').removeClass("active");
@@ -18,10 +19,16 @@ $(function(){
     $('#previewModal').modal('show');
   })
 
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
 
+  $('sup a').click(function() {
+    $(this).toggleClass('fa-plus fa-minus');
+  });
 
 });
+
+let name8 = document.getElementById("builderName").value;
+let value = name8.value;
 
 updateList = function() {
   var input = document.getElementById('builderFiles');
@@ -31,4 +38,12 @@ updateList = function() {
       children += '<li>' + input.files.item(i).name + '</li>';
   }
   output.innerHTML = '<ul>'+children+'</ul>';
+}
+
+var docDefinition = {
+	content: [
+		'Another paragraph, this time a little bit longer to make sure, this line will be divided into at least two lines',
+    name8
+	]
+	//pdfmake
 }
